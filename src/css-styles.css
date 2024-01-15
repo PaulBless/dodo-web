@@ -1,0 +1,59 @@
+:root {
+    --dodo-primary: #6C55F9;
+    --dodo-accent: #FF3D85;
+    --dodo-secondary: #645F88;
+    --dodo-success: #35bb78;
+    --dodo-info: #05B4E1;
+    --dodo-warning: #FAC14D;
+    --dodo-danger: #FF4943;
+    --dodo-grey: #B4B2C5;
+    --dodo-dark: #2D2B3A;
+    --dodo-light: #F6F5FC;
+    --dodo-brand: #198754;
+    --dodo-gradient-text: linear-gradient(to bottom, #123, #f34);
+    --dodo-title-text-background: linear-gradient(97deg, #00F 0%, #0B65F6 41.15%, #16BAEE 100%);
+    --background: linear-gradient(97deg, #00F 0%, #0B65F6 41.15%, #16BAEE 100%);
+    --dodo-font-family: 'Poppins', sans-serif;
+    --dodo-font-weight: 400;
+    --dodo-font-size: 1rem;
+    --dodo-line-height: 1.5;
+    --dodo-body-color: rgba(255, 255, 255, 0.6);
+    --dodo-background-color: #FFFFFF;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@100;300;400;500;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); */
+body {
+    font-family: var(--dodo-font-family);
+    line-height: var(--dodo-line-height);
+    color: #2D2B3A;
+}
+
+html, h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    color: #6C55F9;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+form {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+
+}
+
+.dodo-title {
+    font-size: 48px;
+    font-family: var(--dodo-font-family);
+    font-weight: var(--dodo-font-weight);
+    line-height: var(--dodo-line-height);
+}
+
+.dodo-subtitle {
+    font-size: 32px;
+    font-family: var(--dodo-font-family);
+    font-weight: var(--dodo-font-weight);
+    
+}
