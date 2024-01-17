@@ -1,5 +1,8 @@
 <template>
-    <header class="py-4">
+    
+
+    <!-- <header class="fixed top-0 w-full z-30 transition-all shadow-sm py-4"> -->
+    <header class="w-full z-30 transition-all shadow-sm py-4">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <nav class="relative z-50 flex justify-between">
                 <div class="flex items-center md:gap-x-12">
@@ -22,7 +25,7 @@
                             <li><router-link class="inline-block rounded-lg px-3 py-1 text-sm text-gray-600" :to="{name: 'features'}">Features</router-link></li>
                             <li><router-link class="inline-block rounded-lg px-3 py-1 text-sm text-gray-600" :to="{name: 'industries'}">Industries</router-link></li>
                             <li><router-link class="inline-block rounded-lg px-3 py-1 text-sm text-gray-600" :to="{name: 'pricing'}">Pricing</router-link></li>
-                            <li><router-link class="inline-block rounded-lg px-3 py-1 text-sm text-gray-600" :to="{name: 'contact-us'}">Contact Us</router-link></li>
+                            <!-- <li><router-link class="inline-block rounded-lg px-3 py-1 text-sm text-gray-600" :to="{name: 'contact-us'}">Contact Us</router-link></li> -->
                         </ul>
                        
                         <div class="old hidden">

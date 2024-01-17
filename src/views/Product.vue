@@ -154,7 +154,7 @@
   
   <script setup >
   import Header from "../components/Header.vue";
-  import CallToAction from "../components/CallToAction.vue";
+  import CallToAction from "../components/FreeTrial.vue";
   import Footer from "../components/Footer.vue";
   </script>
   

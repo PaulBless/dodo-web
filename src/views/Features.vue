@@ -5,24 +5,8 @@
       <!-- MAIN CONTENT START -->
       <main>
 
-        <section class="hero-banner">
-          <div id="customCarousel" class="container">
-            <div class="row">
-              <div class="col-md-7">
-
-              </div>
-
-              <div class="col-md-5">
-
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-
         <!-- Main banner START -->
-        <section class="position-relative py-8 py-lg-9" id="banner">
+        <section class="position-relative py-8 py-lg-9 pt-6" id="banner">
           <div class="bg-white page-section">
             <div class="container">
               <div class="row">
@@ -41,38 +25,11 @@
                  
                   <!-- TODO: Reactivate buttons after working on respective pages-->
                   <!-- free trial -->
-                  <a class="group mt-5 inline-flex items-center justify-center rounded-xl py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600" color="blue" variant="solid" href="/register">
-                        <span>Start Free <span class="hidden lg:inline">Trial </span>
-                        </span>
-                        <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <g clip-path="url(#clip0_390_496)">
-                                <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="white"/>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_390_496">
-                                <rect width="24" height="24" fill="white"/>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                  </a>
-                  <!-- contact link -->
-                  <router-link to="/contact-us" class="btn btn-outline ml-2">
-                    Contact Us 
-                    <svg class="inline-block " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <g clip-path="url(#clip0_18_1117)">
-                            <path d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="black" fill-opacity="0.6"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_18_1117">
-                            <rect width="24" height="24" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                  </router-link>
+                  <StartTrial />
 
                 </div>
                 
-                <div class="col-lg-6 py-3" data-aos="zoom-in">
+                <div class="col-lg-6 py-3 pt-16" data-aos="zoom-in">
                   <div class="img-place text-center">
                     <img src="../assets/img/seamless-communication.svg" alt="" srcset="">
                   </div>
@@ -260,6 +217,8 @@
 
         <!-- TODO: -->
         <!-- add communication tool suit section -->
+        <ToolSuit />
+
       </main>
       
       <Footer />
@@ -272,7 +231,8 @@
   
   <script setup >
   import Header from "../components/Header.vue";
-  import CallToAction from "../components/CallToAction.vue";
+  import StartTrial from "../components/StartTrial.vue";
+  import ToolSuit from "../components/ToolSuit.vue";
   import Footer from "../components/Footer.vue";
   </script>
   

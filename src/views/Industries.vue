@@ -6,7 +6,7 @@
       <!-- <main> -->
 
         <!-- Main banner START -->
-        <section class="position-relative py-8 py-lg-9" id="banner">
+        <section class="position-relative py-8 py-lg-9 pt-24" id="banner">
           <div class="bg-white page-section">
             <div class="container">
               <div class="row">
@@ -153,7 +153,7 @@
                     </div>
                 </div>
 
-                <!-- 6 -->
+                <!-- 6: Public Sector -->
                 <div class="row mt-10 py-10">
 
                     <div class="col-lg-6 content px-10 sm:mt-9 ">
@@ -173,8 +173,7 @@
                     </div>
                 </div>
 
-
-                <!-- 7 -->
+                <!-- 7: Education -->
                 <div class="row py-20">
                     <div class="col-lg-6 img" data-aos="zoom-in">
                     <div class="img-place text-center">
@@ -196,8 +195,8 @@
                     </div>
                 </div>
 
-                <!-- 8 -->
-                <div class="row py-20">
+                <!-- 8: Retail -->
+                <div class="row py-10">
                     <div class="col-lg-6 img" data-aos="zoom-in">
                     <div class="img-place text-center">
                         <img src="../assets/img/placeholder-image.png" alt="">
@@ -225,6 +224,7 @@
         <!-- end -->
   
         <!-- TODO: add communication tool suit section -->
+        <ToolSuit />
 
       <!-- </main> -->
       
@@ -238,7 +238,8 @@
   
   <script setup >
   import Header from "../components/Header.vue";
-  import CallToAction from "../components/CallToAction.vue";
+  import CallToAction from "../components/FreeTrial.vue";
+  import ToolSuit from "../components/ToolSuit.vue";
   import Footer from "../components/Footer.vue";
   </script>
   

@@ -49,33 +49,7 @@ a {
     background-color: transparent;
 }
 
-form {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-
-}
-
-form label, p {
-    font-size: 16px;
-    font-weight: normal;
-    color: rgba(0, 0, 0, 0.60) !important;
-}
-form span{
-    color: #F00;
-    font-size: 16px;
-    font-weight: normal;
-}
-form input[type="checkbox"]{
-    height: 40px;
-    width: 40px;
-}
-form input[type="text"], input[type="select"] {
-    height: 50px;
-    border-radius: 12px !important;
-    border: 1px solid rgba(0, 0, 0, 0.20);
-    background: #FFF;
-    /* color: var(--dodo-title-text-background); */
-}
+/* Custom Buttons & Links */
 .btn-dd{
     width: 240px;
 }
@@ -87,6 +61,16 @@ form input[type="text"], input[type="select"] {
 }
 .dodo-link {
     color: rgba(0, 0, 0, 0.60);
+    font-weight: 600;
+}
+.dodo-link:hover {
+    /* background: #3D76EB; */
+}
+.link-svg:hover {
+    /* fill: #3D76EB; */
+    /* background: #0091EA; */
+    /* filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%); */
+
 }
 .dodo-title {
     font-size: 32px;
@@ -107,10 +91,80 @@ form input[type="text"], input[type="select"] {
 }
 
 .feature-title {
-    color: rgba(0, 0, 255, 0.50);
+    color: rgba(0, 0, 255, 0.50) !important;
     font-family: var(--dodo-font-family);
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
+
+/* Footer */
+footer{
+    background: #151F26;
+    color: #8EA6B2;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.025rem !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: color .2s ease;
+}
+footer p, footer a {
+    color: #8EA6B2 !important;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.025rem !important;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: normal; */
+    transition: color .2s ease;
+}
+footer h4{
+    color: #FFF;
+    font-family: var(--dodo-font-family);
+    font-weight: var(--dodo-font-weight-main);
+    font-size: 20px !important;
+    line-height: normal;
+    margin-bottom: 1.3em;
+}
+footer hr{
+    background: rgba(142, 166, 178, 0.30);
+    height: 2px;
+}
+footer a:hover {
+    color: #6C55F9;
+    text-decoration: none;
+    transition: color .2ss ease;
+}
+footer .social-icons a:hover {
+    transform: rotate(360deg);
+}
+/* Form Styling */
+form {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+
+}
+
+form label, p {
+    font-size: 16px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.60) !important;
+}
+form span{
+    color: #F00;
+    font-size: 16px;
+    font-weight: normal;
+}
+form input[type="checkbox"]{
+    height: 40px;
+    width: 40px;
+}
+form input[type="text"], select {
+    height: 50px;
+    border-radius: 12px !important;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    background: #FFF;
+}
+
+/* Modals */

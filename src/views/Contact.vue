@@ -80,24 +80,27 @@
                             <div class="col-md-6">
                                 <div class="py-2.5">
                                     <label class="block " for="fname">First Name<span>*</span></label>
-                                    <input type="text" class="form-control" placeholder="Name" />
+                                    <input type="text" class="form-control placeholder-gray-500" placeholder="Enter First Name" />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="py-2.5">
                                     <label class="block " for="fname">Last Name<span>*</span></label>
-                                <input type="text" class="form-control" placeholder="Name" />
+                                <input type="text" class="form-control placeholder-gray-500" placeholder="Enter Last Name" />
                                 </div>
                             </div>
                         </div>
                         <!-- country -->
                         <div class="py-2.5">
+                            
                             <label class="block " for="country">Country / Region<span>*</span></label>
-                            <select name="" id="" class="form-control leading-tight">
-                                <option value="">Select</option>
-                                <option value="">Ghana</option>
-                                <option value="">Nigeria</option>
-                                <option value="">Mali</option>
+                            <!-- <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"> -->
+                            <select id="countries" class="bg-white border border-slate-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option selected>Select Country / Region</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
                             </select>
                         </div>
 
@@ -171,6 +174,87 @@
         </section>
         <!-- Main banner END -->
 
+        <!-- sdfcak -->
+        <div id="features" class="cards-1">
+            <div class="container px-4 sm:px-8 xl:px-4">
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="" alt="alternative" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Platform Integration</h5>
+                        <p class="mb-4">You sales force can use the app on any smartphone platform without compatibility issues</p>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="" alt="alternative" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Easy On Resources</h5>
+                        <p class="mb-4">Works smoothly even on older generation hardware due to our optimization efforts</p>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="" alt="alternative" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Great Performance</h5>
+                        <p class="mb-4">Optimized code and innovative technology insure no delays and ultra-fast responsiveness</p>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="" alt="alternative" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Multiple Languages</h5>
+                        <p class="mb-4">Choose from one of the 40 languages that come pre-installed and start selling smarter</p>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="" alt="alternative" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Free Updates</h5>
+                        <p class="mb-4">Don't worry about future costs, pay once and receive all future updates at no extra cost</p>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="" alt="alternative" />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Community Support</h5>
+                        <p class="mb-4">Register the app and get acces to knowledge and ideas from the Pavo online community</p>
+                    </div>
+                </div>
+                <!-- end of card -->
+            </div>
+            <!-- end of container -->
+        </div>
+
+        
+
+
 
       </main>
       
@@ -184,7 +268,7 @@
   
   <script setup >
   import Header from "../components/Header.vue";
-  import CallToAction from "../components/CallToAction.vue";
+  import CallToAction from "../components/FreeTrial.vue";
   import Footer from "../components/Footer.vue";
   </script>
   
