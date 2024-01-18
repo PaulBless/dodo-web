@@ -11,10 +11,10 @@
                 <!-- socials -->
                 <div class="w-full px-4 sm:w-1/2 md:w-4/12 lg:w-1/3">
                     <div class="w-full mb-10 social-icons">
-                    <h4 class="text-lg sm:text-sm mb-9">
+                    <h4 class="text-lg sm:text-sm mb-9 text-centerr">
                         Connect with us
                     </h4>
-                    <div class="flex items-center mb-6">
+                    <div class="flex items-center justify-centerr mb-6">
                         <!-- linkedin -->
                         <a
                             target="_blank"
@@ -73,7 +73,7 @@
                 <!-- site links -->
                 <div class="w-full px-4 sm:w-1/2 md:w-4/12 lg:w-1/3">
                     <div class="w-full mb-10">
-                    <h4 class="text-lg sm:text-sm mb-9">
+                    <h4 class="text-lg sm:text-sm mb-9 text-centerr">
                         Quick Links
                     </h4>
                     <ul class="space-y-3">
@@ -96,7 +96,7 @@
                         </li>
                         <li>
                             <a
-                                href=""
+                                href="javascript:void(0)"
                                 class="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
                                 >
                             Free Trial

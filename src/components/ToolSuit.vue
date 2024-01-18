@@ -1,7 +1,10 @@
 <template>
     <div>
-        <div class="container mx-auto py-24 mt-8">
-            <p data-aos="fade-up" class="mb-10 dodo-subtitle text-gray-800 text-3xl leading-10 lg:max-w-5xl lg:mx-auto"> 
+        <div class="container mx-auto py-20 lg:mb-8 sm:mb-5">
+            <p 
+                data-aos="fade-up" 
+                class="mb-10 dodo-subtitle text-center text-3xl leading-10 lg:max-w-5xl lg:mx-auto"
+                > 
                 A communication tool that suits your work, however you work.
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">

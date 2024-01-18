@@ -6,7 +6,7 @@
       <!-- <main> -->
 
         <!-- Main banner START -->
-        <section class="position-relative py-8 py-lg-9 pt-24" id="banner">
+        <section class="position-relative py-8 py-lg-9 pt-10" id="banner">
           <div class="bg-white page-section">
             <div class="container">
               <div class="row">

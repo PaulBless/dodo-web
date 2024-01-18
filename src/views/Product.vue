@@ -43,12 +43,11 @@
             </div>
 
             <div class="mt-10 flex justify-center gap-x-6 ">
-                <call-to-action/>
+                <start-trial data-aos=""/>
             </div>
 
             <!-- img -->
-            
-            <div class="mx-auto mt-16 flex justify-center ">
+            <div class="mx-auto mt-32 flex justify-center">
                 <img src="../assets/img/placeholder-image.png" alt="" sizes="" srcset="">
             </div>
         </div>
@@ -76,7 +75,7 @@
                     Our feature-rich solution ensures effective communication while prioritizing security for your sensitive data. Experience the future of corporate communication with innovation and reliability at its core.
                   </p>
                   
-                  
+                  <call-to-action/>
                  
                 </div>
               </div>
@@ -99,7 +98,7 @@
                     Our feature-rich solution ensures effective communication while prioritizing security for your sensitive data. Experience the future of corporate communication with innovation and reliability at its core.
                   </p>
                   
-                  
+                  <call-to-action/>
                  
                 </div>
 
@@ -113,17 +112,18 @@
           </div>
         </section>
 
-        <section class="position-relative py-8 py-lg-9 mb-9 product-three">
+
+        <section class="position-relative py-12 py-lg-16 mb-32 product-three">
           <div class="bg-white ">
             <div class="container">
               <div class="row">
-                <div class="col-lg-6 py-9 img" data-aos="zoom-in">
+                <div class="col-lg-6 py-9 lg:mt-5 img" data-aos="zoom-in">
                   <div class="img-place text-center">
                     <img src="../assets/img/placeholder-image.png" alt="">
                   </div>
                 </div>
 
-                <div class="col-lg-6 content p-4 sm:mt-9 lg:mt-12">
+                <div class="col-lg-6 content p-4 sm:mt-9 lg:mt-5">
                   <h2 class="dodo-subtitle" data-aos="slide-up">
                     Intra-Organization communication worldwide.
                   </h2>
@@ -133,6 +133,7 @@
                     Our feature-rich solution ensures effective communication while prioritizing security for your sensitive data. Experience the future of corporate communication with innovation and reliability at its core.
                   </p>
                   
+                  <call-to-action/>
                   
                  
                 </div>
@@ -154,7 +155,8 @@
   
   <script setup >
   import Header from "../components/Header.vue";
-  import CallToAction from "../components/FreeTrial.vue";
+  import StartTrial from "../components/StartTrial.vue";
+  import CallToAction from "../components/CallToAction.vue";
   import Footer from "../components/Footer.vue";
   </script>
   
