@@ -9,6 +9,7 @@ import Industry from "../views/Industries.vue";
 import Pricing from "../views/PricingPlan.vue";
 import Product from "../views/Product.vue";
 import Faq from "../views/FAQ.vue";
+import StartTrial from "../views/StartTrial.vue";
 
 const routes = [
   {
@@ -50,6 +51,11 @@ const routes = [
     path: '/faq',
     name: 'faq',
     component: Faq
+  },
+ {
+    path: '/start-trial',
+    name: 'start-trial',
+    component: StartTrial
   },
 
 

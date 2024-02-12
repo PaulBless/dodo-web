@@ -6,29 +6,29 @@
       <main>
 
 
-        <!-- trial -->
+        <!-- trial heading -->
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-10 pt-10 text-center lg:pt-10 product-banner">
-            <h1 class="mx-auto max-w-1xl font-display text-2xl font-semibold tracking-tight sm:text-5xl py-5 leading-5">
-                <span class="relative whitespace-wrap ">
-                    <span class="relative text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 ">
-                        Flexible Plans for Every Communication Need: Explore Our Pricing Options.
-                    </span>
-                </span>
-            </h1>
-
+          <h1 class="mx-auto max-w-1xl font-display text-2xl font-semibold tracking-tight sm:text-5xl py-5 leading-5">
+            <span class="relative whitespace-wrap ">
+              <span class="relative text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 ">
+                Flexible Plans for Every Communication Need: Explore Our Pricing Options.
+              </span>
+            </span>
+          </h1>
         </div>
         <!-- end trial -->
 
 
         <!-- pricing component -->
-        <div id="pc-top" class="relative mx-auto max-w-7xl mb-20 px-2 z-10 overflow-hidden rounded-sm border border-stroke bg-white p-8 shadow-default dark:border-strokedark dark:bg-boxdark">
+        <div id="pc-top" class="relative mx-auto max-w-7xl mb-20 px-2 z-10 overflow-x-auto rounded-sm border border-stroke bg-white p-8 shadow-default dark:border-strokedark dark:bg-boxdark">
           <div class="w-full overflow-x-auto">
             <table class="table-auto">
               
               <thead>
                 <tr>
                   <!-- free trial -->
-                  <th class="w-1/4 min-w-[200px] px-5 absolute">
+                  <!-- <th class="w-1/4 min-w-[200px] px-5 inline-block"> -->
+                  <th class="w-1/4 min-w-[200px] px-5 absolute block">
                     <div class="mb-10 text-left">
                       <span class="dodo-subtitle mb-3.5 block pt-0 text-xl font-bold dark:text-white">
                         Free Trial
@@ -42,7 +42,7 @@
                         <span class="dodo-subtitle text-[20px] font-bold dark:text-white lg:text-[20px]">Free</span>
                       </h4>
                       <!-- button -->
-                      <a href="/" class="block max-w-40 btn-dodo p-3 mb-10 text-center font-medium text-white transition hover:bg-opacity-90">
+                      <a href="/start-trial" class="block max-w-40 btn-dodo p-3 mb-10 text-center font-medium text-white transition hover:bg-opacity-90">
                         Get Started
                         <svg class="inline-block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <g clip-path="url(#clip0_390_496)">
@@ -480,7 +480,7 @@
         <!-- <h1 class=" text-2xl font-bold leading-tight text-black sm:text-3xl sm:leading-tight md:text-4xl md:leading-tight xl:text-[40px] xl:leading-tight">TailAdmin - Free Tailwind CSS Dashboard Admin Template</h1> -->
 
         <!-- pricing content -->
-        <div class="relative mx-auto max-w-7xl mb-48 px-4 z-10 overflow-x-hidden shadow-default round-sm p-8">
+        <div class="relative mx-auto max-w-7xl mb-48 px-4 z-10 overflow-x-auto shadow-default round-sm p-8">
             <table class="w-full text-sm text-left rtl:text-right">
                 <thead class="text-md text-gray-700 d dark:text-gray-400">
                     <tr>
@@ -1312,6 +1312,60 @@
                         </td>
                     </tr>
 
+                </tbody>
+            </table>
+        </div>
+
+        <!-- latest -->
+        <div class="relative hidden overflow-x-auto mb-48 px-4 p-8">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 rounded-s-lg">
+                            Product name
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Qty
+                        </th>
+                        <th scope="col" class="px-6 py-3 rounded-e-lg">
+                            Price
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white ">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                            Apple MacBook Pro 17"
+                        </th>
+                        <td class="px-6 py-4">
+                            1
+                        </td>
+                        <td class="px-6 py-4">
+                            $2999
+                        </td>
+                    </tr>
+                    <tr class="bg-white ">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                            Microsoft Surface Pro
+                        </th>
+                        <td class="px-6 py-4">
+                            1
+                        </td>
+                        <td class="px-6 py-4">
+                            $1999
+                        </td>
+                    </tr>
+                    <tr class="bg-white ">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                            Magic Mouse 2
+                        </th>
+                        <td class="px-6 py-4">
+                          1
+                        </td>
+                        <td class="px-6 py-4">
+                            $99
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

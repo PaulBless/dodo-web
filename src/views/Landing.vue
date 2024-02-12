@@ -1,25 +1,23 @@
 <template>
   <div>
-    <Header /> <!-- tailwind styling -->
-    
+    <Header1 /> <!-- tailwind styling -->
+
     <!-- MAIN CONTENT START -->
     <main>
 
       <!-- Main banner START -->
-      <section class="position-relative py-8 py-lg-9" id="banner">
+      <section class="position-relative py-8 py-lg-7" id="banner">
         <div class="bg-white page-section">
           <div class="container">
             <div class="row">
-              <div class="col-lg-5 p-7 sm:mt-9 lg:mt-12">
-                <h1 class="dodo-title pt-3" data-aos="slide-right">
-                  Discover a new mode of <br/>
-                  communication in your <br/>
+              <div class="col-lg-5 p-7 sm:mt-9 md:mt-7 lg:mt-5">
+                <h1 class="dodo-title text-4xl sm:mt-20 sm:text-base md:text-xl lg:text-4xl xl:text-4xl lg:max-w-5xl lg:mx-auto" data-aos="slide-right">
+                  Discover a new mode of 
+                  communication in your
                   organization.
                 </h1>
-
-                <div class="divider"></div>
                 
-                <p class="py-12" data-aos="fade-up">
+                <p class="py-10 leading-7" data-aos="fade-up">
                   Upgrade your communication strategy with our reliable platform, delivering clear voice calls and fast messaging for seamless connectivity. 
                   Our feature-rich solution ensures effective communication while prioritizing security for your sensitive data. Experience the future of corporate communication with innovation and reliability at its core.
                 </p>
@@ -61,7 +59,7 @@
 
                 <div class="divider"></div>
                 <!-- content -->
-                <p class="py-12" data-aos="slide-up">
+                <p class="py-12 leading-7" data-aos="slide-up">
                   Facilitate seamless intra-organization communication globally with our innovative platform. Our solution ensures instant and reliable connectivity for teams, promoting efficient collaboration from anywhere in the world. Break down communication barriers and enhance teamwork effortlessly with our technology. 
                   Experience a new era of interconnectedness, fostering productivity and unity across your organization.
                 </p>
@@ -105,7 +103,7 @@
 
                 <div class="divider"></div>
                 
-                <p class="py-12" data-aos="fade-up">
+                <p class="py-12 leading-7" data-aos="fade-up">
                   Upgrade your communication strategy with our reliable platform, delivering clear voice calls and fast messaging for seamless connectivity. 
                   Our feature-rich solution ensures effective communication while prioritizing security for your sensitive data. Experience the future of corporate communication with innovation and reliability at its core.
                 </p>
@@ -158,7 +156,7 @@
 
                 <div class="divider"></div>
                 
-                <p class="py-12" data-aos="slide-up">
+                <p class="py-12 leading-7" data-aos="slide-up">
                   Experience peace of mind with our Secure Communications solution, fortifying your global network of seamless communication. Our cutting-edge technology ensures confidentiality and integrity, safeguarding your sensitive data at every exchange. 
                   Elevate your organizational connectivity with a robust layer of security, promoting trust and reliability in every interaction. Embrace seamless communication with the confidence of fortified protection.
                 </p>
@@ -260,7 +258,7 @@
 </template>
 
 <script setup >
-import Header from "../components/Header.vue";
+import Header1 from "../components/Header1.vue";
 import FreeTrial from "../components/FreeTrial.vue";
 import ToolSuit from "../components/ToolSuit.vue";
 import Footer from "../components/Footer.vue";

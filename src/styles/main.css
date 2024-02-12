@@ -73,7 +73,7 @@ a {
 
 }
 .dodo-title {
-    font-size: 32px;
+    /* font-size: 32px; */
     font-family: var(--dodo-font-family);
     font-weight: var(--dodo-font-weight-main);
     line-height: 1.3;

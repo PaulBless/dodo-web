@@ -1,105 +1,66 @@
 <template>
-    <nav
-      class="p-3 border-gray-200 rounded bg-green-100 dark:bg-gray-800 dark:border-gray-700">
-      <div class="container-fluid flex flex-wrap items-center justify-between mx-auto">
-        <p class="flex items-center hover:underline">
-          <img src="" class="h-6 mr-5 sm:h-10 invisible" />
-          <span
-            class="self-center hover:text-green-700 text-xl font-semibold whitespace-nowrap dark:text-white">
-            <a href="/" class="">Dodo </a>
-          </span>
-        </p>
-  
-        <div class="hidden w-full md:block md:w-auto">
-          <ul
-            class="flex flex-col mt-4 rounded-lg text-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-            <li>
-              <router-link
-                to="/"
-                class="flex items-center hover:text-green-700 hover:underline bg-green-50 p-2 ml-2 text-gray-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-gray-700"
-                aria-current="page">
-                <span class="flex-1 ml-2 whitespace-nowrap">Products</span>
-              </router-link>
-            </li>
-            <li>
-              <router-link
-                to="/projects"
-                class="flex items-center hover:text-green-700 hover:underline p-2 ml-2 text-gray-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-gray-700"
-                aria-current="page">
-                <span class="flex-1 ml-2 whitespace-nowrap">Features</span>
-              </router-link>
-            </li>
-            
-            <li>
-              <router-link
-                to="/about"
-                class="flex items-center p-2 ml-2 hover:text-green-700 hover:underline text-gray-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-gray-700"
-                aria-current="page">
-                <span class="flex-1 ml-2 whitespace-nowrap">Industries</span>
-              </router-link>
-            </li>
-            <li>
-              <router-link
-                to="/pricing"
-                class="flex items-center p-2 ml-2 hover:text-green-700 hover:underline text-gray-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-gray-700"
-                aria-current="page">
-                <span class="flex-1 ml-2 whitespace-nowrap">Pricing</span>
-              </router-link>
-            </li>
-            <li>
-              <router-link
-                to="/contact"
-                class="flex items-center p-2 ml-2 hover:text-green-700 hover:underline text-gray-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-gray-700"
-                aria-current="page">
-                <span class="flex-1 ml-2 whitespace-nowrap">Contact</span>
-              </router-link>
-            </li>
-            
-  
-            <!-- Auth links item -->
-            
-          </ul>
-        </div>
+  <nav class="bg-white p-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <!-- Brand Logo -->
+      <div>
+        <img src="../assets/dodo-logo.png" alt="Logo" class="h-10 w-15">
       </div>
-    </nav>
-  </template>
-  
-  <script>
-  export default {
-    name: "Navbar",
-    data() {
-      return {
-        active: 0,
-        logo: '../assets/dev.png',
-      };
+
+      <!-- Page Links (hidden on small screens) -->
+      <div class="hidden md:flex lg:flex space-x-4">
+        <a href="#" class="hover:text-gray-300">Home</a>
+        <a href="#" class="hover:text-gray-300">About</a>
+        <a href="#" class="hover:text-gray-300">Services</a>
+        <!-- Add more links as needed -->
+      </div>
+
+      <!-- Mobile Toggle Button -->
+      <div class="md:hidden">
+        <button @click="toggleMobileMenu" class="text-white focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Login/Signup Buttons (hidden on small screens) -->
+      <div class="hidden md:flex items-center space-x-4">
+        <a href="#" class="text-white hover:text-gray-300">Login</a>
+        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Sign Up</a>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (visible on small screens) -->
+    <div v-if="mobileMenuOpen" class="md:hidden mt-2">
+      <a href="#" class="block text-white py-2">Home</a>
+      <a href="#" class="block text-white py-2">About</a>
+      <a href="#" class="block text-white py-2">Services</a>
+      <!-- Add more links as needed -->
+      <div class="flex items-center space-x-4 mt-4">
+        <a href="#" class="text-white hover:text-gray-300">Login</a>
+        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Sign Up</a>
+      </div>
+    </div>
+  </nav>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      mobileMenuOpen: false,
+    };
+  },
+  methods: {
+    toggleMobileMenu() {
+      this.mobileMenuOpen = !this.mobileMenuOpen;
     },
-    methods: {
-      inActive() {
-        this.active += 1;
-      },
-    },
-  };
-  </script>
-  
-  <style>
-  .tester-color{
-    color: #123456;
-  }
-  .fade-nav-enter-active,
-  .fade-nav-leave-active {
-    transition: opacity 0.5s ease;
-  }
-  
-  .fade-nav-enter-from,
-  .fade-nav-leave-to {
-    opacity: 0;
-  }
-  
-  .vue-school-active-link {
-    /* background-color: rgb(225, 255, 228); */
-    padding: 5px 12px;
-    border-radius: 10px;
-    text-decoration: underline;
-  }
-  </style>
-  
+  },
+};
+</script>
+
+<style scoped>
+/* Customize styles as needed */
+</style>
